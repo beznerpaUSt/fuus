@@ -36,3 +36,213 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+
+/* Style for the table header */
+.table-header {
+  background-color: #004191; /* Green background */
+  color: white; /* White text */
+}
+
+.table-header th {
+  padding: 12px; /* Padding for header cells */
+  text-align: left; /* Align text to the left */
+}
+
+.table-header th:hover {
+  background-color: #3374B1; /* Darker green on hover */
+}
+
+/* Style for highlighted rows when a checkbox is checked */
+.highlighted-row {
+  background-color: #323232; 
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  font-weight: bold; /* Make the font bold */
+  color: #D8DADB;
+  border: 1px solid #D8DADB;
+}
+
+body {
+  margin: 40px; /* Adjust the value as needed */
+  padding: 0; /* Optional: remove default padding */
+  box-sizing: border-box; /* Optional: include padding and border in element's total width and height */
+}
+
+.rotated-text-90 {
+  transform: rotate(90deg); /* Rotates the text 45 degrees */
+  /* Additional styles */
+  display: inline-block; /* Required for transform to work properly */
+}
+
+.rotated-text--90 {
+  transform: rotate(-90deg); /* Rotates the text 45 degrees */
+  /* Additional styles */
+  display: inline-block; /* Required for transform to work properly */
+}
+
+/* General border for table cells */
+.table-border {
+  border: 1px solid #D8DADB;
+}
+
+/* Add padding to all table cells */
+.table-cell {
+  padding: 8px; /* Adjust the padding value as needed */
+  text-align: center; /* Center align text for default */
+}
+
+/* Left align for specific columns */
+.table-cell-left {
+  text-align: left; /* Left align text */
+}
+
+/* Specific styles for table header */
+.table-header th {
+  border: 1px solid #D8DADB;
+  padding: 12px; /* Ensure headers also have padding */
+  text-align: center; /* Default center alignment for headers */
+  font-size: 1.1em; /* Adjust the size as needed */
+  font-weight: bold; /* Optional: make the font bold */
+}
+
+/* Left align headers for specific columns */
+.table-header th.left-align {
+  text-align: left; /* Left align header text */
+}
+
+/* Class for the Label column */
+.label-column {
+  max-width: 200px; /* Set your desired maximum width */
+  word-wrap: break-word; /* Allow text to wrap to a new line */
+  overflow: hidden; /* Hide overflow if necessary */
+  white-space: normal; /* Allow normal white space handling */
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.login-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  height: calc(100vh - 300px); 
+  padding-top: 20px; 
+}
+
+.login-form {
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width for the form */
+}
+
+.login-form h1 {
+  text-align: center; /* Center the title */
+  font-size: 24px; /* Bigger font size for the title */
+}
+
+.login-form input {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding inside the input fields */
+  margin: 10px 0; /* Margin between input fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners for input fields */
+  font-size: 16px; /* Bigger font size for input fields */
+}
+
+.loginbutton {
+  width: 100%; /* Full width for the button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #004191; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for the button */
+  font-size: 16px; /* Bigger font size for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.loginbutton:hover {
+  background-color: #3374B1; 
+}
+
+.message {
+  text-align: center; /* Center the message */
+  margin-top: 20px; /* Space above the message */
+}
+
+
+/* UploadForm.css */
+
+.upload-form {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  padding: 20px; /* Add padding for better spacing */
+  border: 2px dashed #004191; /* Dashed border for the upload area */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width for the form */
+  margin: auto; /* Center the form horizontally */
+  margin-top: 20px;
+
+}
+
+.upload-form input[type="file"] {
+  margin-bottom: 15px; /* Space below the file input */
+  padding: 10px; /* Padding for the input */
+  border: 1px solid #ccc; /* Border around the input */
+  border-radius: 4px; /* Rounded corners for the input */
+  width: 100%; /* Full width of the form */
+  cursor: pointer; /* Pointer cursor for file input */
+}
+
+.upload-form button {
+  background-color: #004191; /* Green background color */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding for the button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor for button */
+  font-size: 16px; /* Font size for the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.upload-form button:hover {
+  background-color: #3374B1; 
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  padding-right: 50px; /* Space for the button */
+  width: 100%; /* Full width */
+}
+
+.toggle-password-button {
+  position: absolute;
+  right: 10px; /* Positioning from the right */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #007bff; /* Change color as needed */
+  font-size: 12px; /* Smaller font size */
+  padding: 5px; /* Padding for a better click area */
+  outline: none; /* Remove outline */
+  height: 100%; /* Make the button height equal to the input */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
